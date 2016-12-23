@@ -1,0 +1,396 @@
+/*----------block-list----------*/
+/*header*/
+/*topview*/
+/*content*/
+
+
+/*----------common-----------*/
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.clearfix::after {
+ clear: both;
+ content: "";
+ display: block;
+}
+
+body {
+   font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+  }
+
+a {
+	text-decoration: none;
+	color:#696969;
+}
+/*----------navigation----------*/
+nav {
+  position:fixed;
+  z-index: 99;
+  top:0;
+  height: 100%;
+  width: 320px;
+  background-color: white;
+  padding-top:300px;
+  float: left;
+  font-size: x-large;
+  font-weight: 900;
+
+}
+
+nav li {
+  list-style:none;
+  color:#696969;
+  padding:10px 15px 10px 15px;
+
+}
+
+.menubar-sns {
+	float: right;
+	padding:5px;
+}
+
+
+
+/*----------main----------*/
+/*manubarのwidthの分だけ右にずれろ*/
+.main {
+	padding-left:320px;
+	font-weight: 900;
+}
+
+/*----------topview----------*/
+.topview {
+  background: linear-gradient(-45deg, rgba(100, 100, 100, 0.8), rgba(155, 100, 0, .2)),
+  url(../img/top4.jpg);
+  background-size: cover;
+  border:3px solid white;
+  height: 720px;
+  margin-bottom: 2px;
+}
+
+.topview-title {
+  margin: 80px 0 0 680px;
+  padding: 50px 20px 0 0;
+  background-color:white;
+  opacity:0.3;
+  color:  #696969 ;
+  width:500px;
+  text-align: right;
+  font-size: 60px;
+}
+
+.topview-title-message {
+  margin-left:680px;
+  padding: 20px 20px 0px 0px;
+  background-color:white;
+  opacity:0.3;
+  color:  #696969 ;
+  width:500px;
+  text-align: right;
+  font-size:35px;
+}
+
+/*----------topviewScrollbtn----------*/
+/*余計なことするんだったら消す*/
+.scroll-btn {
+	padding-top: 70px;
+}
+.scroll-btn span {
+	position: absolute;
+	top: 620px;
+	right: 40%;
+	width: 40px;
+	height: 40px;
+	margin-left: -12px;
+	border-left: 5px solid #696969;
+	border-bottom: 5px solid #696969;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb 1.5s infinite;
+	animation: sdb 1.5s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 0.9;
+	}
+	100% {
+		-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0.1;
+	}
+}
+@keyframes sdb {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+
+
+/*----------photo----------*/
+.photo {
+	background-color: #dcdcdc;
+	border-top: 2px dotted white;
+	border-bottom:2px dotted white;
+}
+
+.photo-title {
+	height:100px;
+    background-color:white;
+    opacity:0.3;
+}
+
+.photo-title-left {
+	float:left;
+    padding:15px 0 0 50px;
+	font-size:larger; ;
+}
+
+.photo-title-right {
+	border-bottom: 10px dotted black;
+	float:right;
+	padding: 14px 100px 0 0;
+	font-size:45px;
+}
+
+.photo-contents {
+	padding:10px;
+
+}
+
+
+.photo-contents-items {
+	float: left;
+	opacity: 0.8;
+}
+
+.photo-contents-icon {
+	position: relative;
+	margin: 5px 5px 5px 5px;
+}
+
+
+.photo-contents-icon p {
+	position: absolute;
+	right:10px;
+	bottom:10px;
+	color:#d3d3d3;
+	font-size: 20px;
+}
+
+.photo-contents-items:hover {
+	cursor: pointer;
+}
+
+
+/*----------map----------*/
+.map {
+	background-color: #ffe5ff;
+	border-top: 2px dotted white;
+	border-bottom:2px dotted white;
+}
+
+.map-title {
+	height:100px;
+	background-color:white;
+    opacity:0.3;
+}
+
+.map-title-left {
+    float:left;
+    padding:20px 0 0 50px;
+	font-size: larger;
+}
+
+.map-title-right {
+	border-bottom: 10px dotted black;
+	float:right;
+	padding: 14px 100px 0 0;
+	font-size:45px;
+	}
+
+.map-contents-left {
+	float: left;
+	max-width: 700px;
+	height:auto;
+	padding-left: 50px;
+}
+
+.map-contents-left img {
+	max-width: 700px;
+}
+
+.map-contents-left p {
+	color: #696969;
+}
+
+.map-contents-right {
+	float: right;
+	margin:20px 50px 20px 0px;
+	color: #696969;
+	text-align: left;
+	font-size: 14px;
+}
+
+.map-contents-right a {
+	text-decoration: underline;
+	color:blue;
+}
+.map-contents-right table, td, th {
+	border-collapse: collapse;
+	border: 1px #696969 solid;
+	padding:10px;
+} 
+
+.map-contents-right p {
+	padding-top:8px;
+	font-size: 12px
+}
+
+
+
+/*----------preparations----------*/
+.preparations {
+	background-color: #dcdcdc;
+	border-bottom:2px dotted white;
+}
+
+.preparations-title {
+	color:black	;
+	height:100px;
+	background-color:white;
+	opacity:0.3;
+}
+
+.preparations-title-left {
+	float:left;
+    padding:20px 0 0 50px;
+	font-size: larger;
+}
+
+.preparations-title-right {
+	border-bottom: 10px dotted black;
+	float:right;
+	padding: 14px 100px 0 0;
+	font-size:45px;
+}
+
+.preparations-content {
+	float:left;
+	height: 75vh;
+	padding:65px;
+}
+
+
+.preparations-content-icon h3 {
+	text-align: center;
+	font-size: 32px;
+}
+
+.preparations-content-icon {
+	position:relative;
+	background-color: white;
+	color:#696969;
+	box-shadow: 10px 10px;
+}
+
+.preparations-content-icon:hover {
+	cursor: pointer;
+}
+
+
+.preparations-content-icon1 {
+	transform: rotate(-5deg);
+	margin-top: 25px;
+}
+
+.preparations-content-icon2 {
+	transform: rotate(1deg);
+	margin-top:30px;
+}
+
+.preparations-content-icon3 {
+	transform: rotate(-2deg);
+	margin: 22px 0 0 10px;
+
+}
+
+.preparations-content-icon h3 {
+	position:absolute;
+	top:100px;
+	width:100%;
+}
+
+.preparations-content-icon-text {
+  width:100%;
+  display:inline-block;
+  font-size:14px;
+  background-color: pink;
+  text-align: center;
+  text-decoration: underline; 
+  color:#696969;
+  margin-top:50px;
+}
+
+/*-----about-----*/
+.about {
+	background-color: #ffe5ff;
+	border-top: 2px dotted white;
+	opacity:1;
+}
+
+.about-title {
+	color:black;
+	height:100px;
+	background-color: white;
+	opacity:0.3;
+}
+
+.about-title-left {
+    float:left;
+    padding:20px 0 0 50px;
+	font-size: larger;
+}
+
+.about-title-right {
+    border-bottom: 10px dotted black;
+	float:right;
+	padding: 14px 100px 0 0;
+	font-size:45px;
+}
+
+.about-contents {
+  background:url("../img/test2.jpg");
+  background-size: cover;
+  
+  height:630px;
+  position: relative;
+ }
+
+.about-contents-text {
+	color: black;
+	background-color: white;
+	opacity: 0.5;
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height: 40%;
+	padding: 20px 0 20px 80px;
+}
